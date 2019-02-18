@@ -1,11 +1,10 @@
-public class Vault {
-int code= 1234;	
+import java.util.Random;
 
-	Vault(){
-	
-	}
+public class Vault {
+int secretCode= new Random().nextInt(1000001);	
+
 	boolean tryCode(int number) {
-	if(number==code) {
+	if(number==secretCode) {
 		return true;
 	}
 	else return false;
